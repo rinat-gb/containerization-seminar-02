@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контейнеризация (семинары) Семинар №2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Урок 2. Механизмы контрольных групп</h1>
+
+  <div class="black_box">
+    <h3>Задание №1</h3>
+    <ol>
+      <li>запустить контейнер с ubuntu, используя механизм <code>LXC</code></li>
+      <li>ограничить контейнер 256 Мб ОЗУ и проверить, что ограничение работает</li>
+    </ol>
+  </div>
+
+  <p>Скриншот со всеми операциями:</p>
+  <img src="img/containerization_seminar_02_task_01.png" alt="скриншот задания №1">
+
+  <div class="black_box">
+    <h3>Задание №2</h3>
+    <p>настроить автоматическую маршрутизацию между контейнерами. Адреса можно взять:
+      <code>10.0.12.0/24</code> и <code>10.0.13.0/24</code>.
+      <br>
+      e.x.
+      <br>
+      <code>sudo&nbsp;lxc-create&nbsp;-n&nbsp;test123&nbsp;-t&nbsp;ubuntu&nbsp;-f&nbsp;/usr/share/doc/lxc/examples/lxc-veth.conf</code>
+    </p>
+  </div>
+
+  <p>А вот тут сколько я не бился сеть мне поднять так и не удалось ;-( Всё время получалось лишь
+    "connect:&nbsp;Network&nbsp;is&nbsp;unreachable"</p>
+
+  <p>Ну хоть первое задание сделал, а про второе на семинаре было сказано что его делать необязательно. Но я всё равно
+    пробовал, целый день убил. Но так ничего и не вышло.</p>
+</body>
+
+</html>
